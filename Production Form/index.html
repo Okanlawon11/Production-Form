@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Product Survey Form</title>
+    <link rel="stylesheet" href="productform.css">
+  </head>
+  <body>
+    <h1>Product Survey Form</h1>
+    <p>Thank for asking the product</p>
+    <form action="https://google.com/">
+      <fieldset class="font">
+        <label for="name">Name:<input type="text" id="name" name="name" placeholder="Enter your full Name" required></label>
+        <label for="email">Email:<input type="email" id="email" name="email" placeholder="Enter your email address" required></label>
+        <label for="age">Age <span>(Optional)</span>:<input type="number" id="age" name="age" placeholder="Age" min="18" max="120"></label>
+        <label for="current-role">Which option describe your current role?
+          <select name="current-role" id="current-role">
+            <option value="">Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Working</option>
+            <option value="3">Business</option>
+            <option value="4">Home maker</option>
+            <option value="5">Self employ</option>
+            <option value="6">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Select your gender?</legend>
+        <label for="male"><input class="inline" type="radio" id="male" name="gender" required> Male</label>
+        <label for="female"><input class="inline" type="radio" id="female" name="gender"> Female</label>
+        <label for="other"><input class="inline" type="radio" id="other" name="gender"> Other</label>
+      </fieldset>
+      <fieldset>
+        <legend>Would you recommend this product to others?</legend>
+        <label for="definitely"><input class="inline" type="radio" id="definitely" name="recommendation" required> Definitely</label>
+        <label for="maybe"><input class="inline" type="radio" id="maybe" name="recommendation"> Maybe</label>
+        <label for="not-sure"><input class="inline" type="radio" id="not-sure" name="recommendation"> Not sure</label>
+      </fieldset>
+      <fieldset>
+        <legend>What made you buy this product? <span>(Check all that apply)</span></legend>
+        <label for="talcum-powder"><input class="inline" type="checkbox" id="talcum-powder" name="talcum-powder">Talcum powder</label>
+        <label for="perfume"><input class="inline" type="checkbox" id="perfume" name="perfume">Pefume</label>
+        <label for="bathing-soap"><input class="inline" type="checkbox" id="bathing-soap" name="bathing-soap">Bathing soap</label>
+        <label for="washing-soap"><input class="inline" type="checkbox" id="washing-soap" name="washing-soap">Washing soap</label>
+        <label for="sanitizer"><input class="inline" type="checkbox" id="sanitizer" name="sanitizer">Sanitizer</label>
+        <label for="shampoo"><input class="inline" type="checkbox" id="shampoo" name="shampoo">Shampoo</label>
+        <label for="face-wash"><input class="inline" type="checkbox" id="face-wash" name="face-wash">Face-wash</label>
+      </fieldset>
+      <fieldset>
+        <label for="comment">Any comments or suggestions?
+          <textarea name="comment" id="comment" cols="30" rows="6" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>   
+  </body>
+</html>
